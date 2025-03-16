@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Responsive Drop Down Navigation Menu | CodingLab </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROc-CiXo6mYVjSNhRxTrzHqtHOqj6Pk5S7Kg&s">
+   </head>
+<body>
+  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="#">CodingLab</a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name">CodingLab</span>
+          <i class='bx bx-x' ></i>
+        </div>
+        <ul class="links">
+          <li><a href="#">HOME</a></li>
+          <li>
+            <a href="#">HTML & CSS</a>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Login Forms</a></li>
+              <li><a href="#">Card Design</a></li>
+              <li class="more">
+                <span><a href="#">More</a>
+                <i class='bx bxs-chevron-right arrow more-arrow'></i>
+              </span>
+                <ul class="more-sub-menu sub-menu">
+                  <li><a href="#">Neumorphism</a></li>
+                  <li><a href="#">Pre-loader</a></li>
+                  <li><a href="#">Glassmorphism</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">JAVASCRIPT</a>
+            <i class='bx bxs-chevron-down js-arrow arrow '></i>
+            <ul class="js-sub-menu sub-menu">
+              <li><a href="#">Dynamic Clock</a></li>
+              <li><a href="#">Form Validation</a></li>
+              <li><a href="#">Card Slider</a></li>
+              <li><a href="#">Complete Website</a></li>
+            </ul>
+          </li>
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="#">CONTACT US</a></li>
+        </ul>
+      </div>
+      <div class="search-box">
+        <i class='bx bx-search'></i>
+        <div class="input-box">
+          <input type="text" placeholder="Search...">
+        </div>
+      </div>
+    </div>
+  </nav>
+ 
+
+  /* ----------------------------------------------------- iamge slider ----------------------------------------------*/
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="https://www.w3schools.com/howto/img_mountains_wide.jpg" width="100%">
+      <div class="text">Caption Text</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="https://www.w3schools.com/howto/img_mountains_wide.jpg" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+  </div>
+    <br>
+    
+  <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+
+    <!-- ------------------------------------------------- our courses ----------------------------------------------- -->
+    <div class="courses-section">
+      <h2>Our Courses</h2>
+      <div class="courses-container">
+          <div class="course-card">
+              <img src="https://ts4.mm.bing.net/th?id=OIP.2OWHgfFXf3kzKRw37a4gfgHaHu&pid=15.1" alt="Course 1">
+              <h3>Web Development</h3>
+              <p class="fee">Fee: $500</p>
+              <p>Learn to build modern websites using HTML, CSS, and JavaScript.</p>
+              <button>Apply Now</button>
+          </div>
+          <div class="course-card">
+              <img src="data:image/jpeg;base64,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" alt="Course 2">
+              <h3>React.js Mastery</h3>
+              <p class="fee">Fee: $600</p>
+              <p>Deep dive into React.js and build dynamic web applications.</p>
+              <button>Apply Now</button>
+          </div>
+          <div class="course-card">
+              <img src="data:image/jpeg;base64,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" alt="Course 3">
+              <h3>UI/UX Design</h3>
+              <p class="fee">Fee: $400</p>
+              <p>Master UI/UX principles and create stunning user interfaces.</p>
+              <button>Apply Now</button>
+          </div>
+      </div>
+  </div>
+
+  <!-- --------------------------------------------------------- image gallery ---------------------------------------------- -->
+<div class="gallery">
+  <h2>Our Memories</h2>
+  <div class="row"> 
+    <div class="column">
+      <img src="https://images.pexels.com/photos/1449656/pexels-photo-1449656.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%">
+      <img src="https://images.pexels.com/photos/1313267/pexels-photo-1313267.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%">
+      <img src="https://images.pexels.com/photos/1028598/pexels-photo-1028598.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%">
+      <img src="https://images.pexels.com/photos/235294/pexels-photo-235294.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%">
+      <img src="https://images.pexels.com/photos/51312/kiwi-fruit-vitamins-healthy-eating-51312.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%">
+      <img src="https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%">
+      <img src="https://images.pexels.com/photos/207085/pexels-photo-207085.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="https://images.pexels.com/photos/207085/pexels-photo-207085.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%">
+      <img src="https://images.pexels.com/photos/1059905/pexels-photo-1059905.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%">
+      <img src="https://images.pexels.com/photos/764925/pexels-photo-764925.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%">
+      <img src="https://images.pexels.com/photos/1143754/pexels-photo-1143754.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%">
+      <img src="https://images.pexels.com/photos/936611/pexels-photo-936611.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%">
+      <img src="https://images.pexels.com/photos/338713/pexels-photo-338713.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%">
+      <img src="https://images.pexels.com/photos/616836/pexels-photo-616836.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%">
+    </div>  
+    <div class="column">
+      <img src="https://images.pexels.com/photos/103566/pexels-photo-103566.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%">
+      <img src="https://images.pexels.com/photos/235294/pexels-photo-235294.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%">
+      <img src="https://images.pexels.com/photos/1233319/pexels-photo-1233319.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%">
+      <img src="https://images.pexels.com/photos/541216/pexels-photo-541216.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%">
+      <img src="https://images.pexels.com/photos/842571/pexels-photo-842571.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%">
+      <img src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%">
+      <img src="https://images.pexels.com/photos/1545743/pexels-photo-1545743.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="https://images.pexels.com/photos/1164778/pexels-photo-1164778.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%">
+      <img src="https://images.pexels.com/photos/840996/pexels-photo-840996.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%">
+      <img src="https://images.pexels.com/photos/1662159/pexels-photo-1662159.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%">
+      <img src="https://images.pexels.com/photos/235294/pexels-photo-235294.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%">
+      <img src="https://images.pexels.com/photos/1157255/pexels-photo-1157255.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%">
+      <img src="https://images.pexels.com/photos/1181292/pexels-photo-1181292.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%">
+      <img src="https://images.pexels.com/photos/207085/pexels-photo-207085.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%">
+    </div>
+  </div>
+</div>
+<!-- --------------------------------------------------- map ------------------------------------------------------- -->
+ <div class="maps">
+  <h2>Our Location</h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3479.1958128897436!2d76.89068887480178!3d29.305931275303756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390dc3b5533b6d9f%3A0x1b563db61bcc0195!2sGEETA%20UNIVERSITY%2C%20NAULTHA%2C%20PANIPAT!5e0!3m2!1sen!2sin!4v1742099352819!5m2!1sen!2sin" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+  <!-- ---------------------------------------------------------- footer section ---------------------------------------- -->
+   
+  <section class="footer">
+    <div class="footer-row">
+      <div class="footer-col">
+        <h4>Info</h4>
+        <ul class="links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Compressions</a></li>
+          <li><a href="#">Customers</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Collection</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul class="links">
+          <li><a href="#">Free Designs</a></li>
+          <li><a href="#">Latest Designs</a></li>
+          <li><a href="#">Themes</a></li>
+          <li><a href="#">Popular Designs</a></li>
+          <li><a href="#">Art Skills</a></li>
+          <li><a href="#">New Uploads</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul class="links">
+          <li><a href="#">Customer Agreement</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">GDPR</a></li>
+          <li><a href="#">Security</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Media Kit</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p>
+          Subscribe to our newsletter for a weekly dose
+          of news, updates, helpful tips, and
+          exclusive offers.
+        </p>
+        <form action="#">
+          <input type="text" placeholder="Your email" required>
+          <button type="submit">SUBSCRIBE</button>
+        </form>
+        <div class="icons">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-github"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+
+</body>
+</html>
