@@ -1,7 +1,10 @@
 // search-box open close js code
 let navbar = document.querySelector(".navbar");
 let searchBox = document.querySelector(".search-box .bx-search");
-// let searchBoxCancel = document.querySelector(".search-box .bx-x");
+let images = document.getElementById("images");
+let profile = document.getElementById("profile");
+let login_btn = document.getElementById("login");
+let Singup_btn = document.getElementById("Singup");
 
 searchBox.addEventListener("click", ()=>{
   navbar.classList.toggle("showInput");
@@ -65,3 +68,56 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+
+const fetchData = async () => {
+  let res = await fetch('https://api.spoonacular.com/recipes/complexSearch?apiKey=ba867d09eb5f45c3922e283768b570e0');
+  let data = await res.json();
+  images.innerHTML = data.results.map((result) => {
+    return (`
+    <div class="column">
+      <img src="${result.image}" alt="images">
+      <p>${result.title}</p>
+    </div>
+    `)
+  }).join('');
+}
+fetchData();
+
+const openProfile = () => {
+  login_btn.classList.remove("hidden");
+  login_btn.focus();
+};
+
+const closeProfile = () => {
+  login_btn.classList.add("hidden");
+};
+
+login_btn.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    closeProfile();
+  }
+});
+
+profile.addEventListener("click", openProfile);
+
+const openSingup = () => {
+  Singup_btn.classList.remove("hidden");
+  Singup_btn.focus();
+  console.log("hello");
+};
+
+const closeSignup = () => {
+  Singup_btn.classList.add("hidden");
+};
+
+Singup_btn.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    closeSignup();
+  }
+});
+
+Singup_btn.addEventListener("click", openSingup);
+
+
+

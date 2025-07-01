@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+<body>
+  <div id="login" tabindex="0" class="w-[100vw] text-[#3E8DA8] h-[100vh] fixed bg-black/70 top-0 left-0 z-50 flex justify-center items-center">
+    <div class="bg-white w-2/6 h-4/6 flex p-5 flex-col">
+      <button class="self-end font-extrabold px-3 py-1" type="button" onclick="closeProfile()"><a class="" href="./index.html">X</a></button>
+      <header class="text-center">
+        <h1 class="text-6xl">Login</h1>
+      </header>
+      <div class="flex flex-col gap-5 w-3/5 mx-auto mt-20">
+        <form class="flex flex-col gap-6 text-2xl" onsubmit="checkLogin(event)">
+          <div class="flex flex-col gap-2">
+            <label for="email">Email</label>
+            <input id="email" class="text-black w-full focus:outline-none" type="email" placeholder="Enter your email...">
+          </div>
+          <div class="flex flex-col gap-2">
+            <label for="email">Password</label>
+            <input id="password" class="text-black w-full focus:outline-none" type="password" placeholder="Enter your password...">
+          </div>
+          <button class="bg-[#3E8DA8] text-white rounded-xl p-3" type="submit">Submit</button>
+        </form>
+        <!-- <button type="button" class="bg-[#3E8DA8] text-white rounded-xl p-3 font-bold" onclick="openSingup()">Create New Account</button> -->
+         <a class="underline" href="./signup.html">Create new account</a>
+         <div id="result" class="text-red-500 flex items-center justify-center"></div>
+      </div>
+    </div>
+  </div>
+  <script src="./login.js" class="flex items-center justify-center"></script>
+</body>
+</html>
